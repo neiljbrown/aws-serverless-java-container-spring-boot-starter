@@ -2,6 +2,7 @@ plugins {
   id 'org.springframework.boot' version '2.1.1.RELEASE'
 }
 apply plugin: 'java'
+apply plugin: 'idea'
 
 repositories {
   jcenter()
