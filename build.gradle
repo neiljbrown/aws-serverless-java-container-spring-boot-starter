@@ -21,6 +21,7 @@ dependencies {
 }
 
 task buildZip(type: Zip) {
+  classifier = 'lambda-package'  
   from compileJava
   from processResources
   into('lib') {

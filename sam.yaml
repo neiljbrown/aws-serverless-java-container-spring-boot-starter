@@ -11,7 +11,7 @@ Resources:
     Properties:
       Handler: com.neiljbrown.StreamLambdaHandler::handleRequest
       Runtime: java8
-      CodeUri: target/aws-serverless-java-container-spring-boot-starter-0.0.1-SNAPSHOT-lambda-package.zip
+      CodeUri: build/distributions/aws-serverless-java-container-spring-boot-starter-0.0.1-SNAPSHOT-lambda-package.zip
       MemorySize: 512
       Policies: AWSLambdaBasicExecutionRole
       Timeout: 30
