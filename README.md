@@ -2,8 +2,8 @@
 
 This project (including the rest of this README below) is a copy of the 
 [AWS Serverless Java Container project’s](https://github.com/awslabs/aws-serverless-java-container) starter app for 
-running a Spring Boot based app on AWS Lambda. It  was *generated* from the AWS Serverless Java Container project's 
-Maven archetype using the following command, as documented in the project’s 
+running a Spring Boot based app on AWS Lambda, with minor customisations. It  was *generated* from the AWS Serverless 
+Java Container project's Maven archetype using the following command, as documented in the project’s 
 [Quick start Spring Boot guide](https://github.com/awslabs/aws-serverless-java-container/wiki/Quick-start---Spring-Boot) - 
 
 ```bash
@@ -44,6 +44,13 @@ $ mvn clean package
 [INFO] Final Memory: XXM/XXXM
 [INFO] ------------------------------------------------------------------------
 ```
+
+\[Update/Addition\] - You can also use Gradle to package the Lambda distribution using the following command  - 
+ ```bash
+ $ gradle build
+```
+The generated distribution zip file will be created in the (non-standard for Gradle) 'target' folder configured in 
+sam.yaml for compatibility & interchangeability with Maven. 
 
 You can use [AWS SAM Local](https://github.com/awslabs/aws-sam-local) to start your project.
 

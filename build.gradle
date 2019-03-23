@@ -21,7 +21,9 @@ dependencies {
 }
 
 task buildZip(type: Zip) {
-  classifier = 'lambda-package'  
+  classifier = 'lambda-package'
+  // Write zip to non-standard output folder configured in sam.yaml for compatibility & interchangeability with Maven
+  destinationDir = file('target')
   from compileJava
   from processResources
   into('lib') {
